@@ -1,0 +1,32 @@
+{
+  "name": "openspec-enhance",
+  "version": "0.0.1",
+  "description": "Enhance OpenSpec workflow with additional commands (brainstorm, grill, tdd, review, diagnose, etc.) in Pi.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "openspec",
+    "pi-coding-agent"
+  ],
+  "license": "MIT",
+  "author": "ioOvOoi",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "extension/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioOvOoi/openspec-enhance.git"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extension/index.ts"
+    ]
+  }
+}
